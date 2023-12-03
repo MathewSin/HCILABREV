@@ -1,0 +1,224 @@
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url('../Assets/pokemonPic.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+    padding: 20px;
+    padding-bottom: 50px;
+    padding-top: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.box:nth-child(1) {
+    background-image: url('../Assets/Vokemon.jpg');
+}
+.box:nth-child(2) {
+    background-image: url('../Assets/pikachu.jpg');
+}
+.box:nth-child(3) {
+    background-image: url('../Assets/Fire.jpg');
+}
+.box:nth-child(4) {
+    background-image: url('../Assets/Bird.jpg');
+}
+
+
+h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+.slogan {
+    font-size: 24px;
+    color: #555;
+}
+
+.encouragement,
+.news-section,
+.event-section {
+    margin-top: 40px;
+}
+
+h2 {
+    font-size: 40px;
+    color: #000000;
+}
+
+p {
+    font-size: 25px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.register-button,
+.news-button,
+.watch-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.register-button:hover,
+.news-button:hover,
+.watch-button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 800px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    .slogan {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .register-button,
+    .news-button,
+    .watch-button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+}
+
+
+
+.boxes {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+    padding: 20px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    margin: 10px auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    max-width: 600px;
+    margin-bottom: 50px;
+}
+
+.news-section {
+    text-align: center;
+}
+
+.news-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.news-item {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.news-button {
+    display: block;
+    width: 150px;
+    margin: 20px auto;
+    padding: 10px;
+    text-align: center;
+    background-color: #4285f4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.news-button:hover {
+    background-color: #3b7cd1;
+}
+
+
+
+
