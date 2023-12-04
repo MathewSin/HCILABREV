@@ -8,3 +8,36 @@ body {
     background-position: center;
     background-repeat: no-repeat;
 }
+
+/* Basic styling for the Pokemon list */
+.pokemon-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  
+  /* Style for each individual Pokemon entry */
+  .pokemon {
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    width: 200px;
+  }
+  
+  .pokemon img {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .pokemon-name {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .pokemon-info {
+    margin-top: 5px;
+    font-size: 14px;
+  }
+  
