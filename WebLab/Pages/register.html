@@ -6,14 +6,31 @@
     <title>VokemonS Sign Up</title>
     <link rel="stylesheet" href="../style/register.css">
 </head>
+<script src="../script/script.js" defer></script>
+
 <body>
     <div class="container">
-        <form class="signup-form">
+        <form form id="registrationForm" action="/submit-registration" method="post" class="signup-form">
             <h1>Join VokemonS</h1>
-            <input type="text" placeholder="Username" required>
+            <input type="text" placeholder="Name" required>
             <input type="email" placeholder="Email" required>
             <input type="password" placeholder="Password" required>
             <input type="password" placeholder="Confirm Password" required>
+            <label for="gender">Gender:</label>
+                <select id="gender" name="gender">
+                    <option value="gender">gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="female">VokemonS</option>
+                    <option value="female">Helicopter</option>
+                    <option value="other">Rather not to say</option>
+                </select>
+            <br>
+            <div>
+                <input type="checkbox" id="agreeTerms" name="agreeTerms">
+                <label for="agreeTerms">I agree to the terms and conditions</label>
+            </div>
+                <br>
             <button type="submit">Sign Up</button>
             <p>Already have an account? <a href="#">Log In</a></p>
         </form>
