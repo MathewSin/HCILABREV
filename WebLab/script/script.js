@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', function() {
     form.addEventListener('submit', function(event) {
         event.preventDefault();
         
-        // Validation for name
         const nameField = form.querySelector('input[type="text"]');
         if (nameField.value.trim() === '') {
             alert('Please enter your name.');
@@ -11,7 +10,6 @@ document.addEventListener('DOMContentLoaded', function() {
             return false;
         }
         
-        // Validation for email
         const emailField = form.querySelector('input[type="email"]');
         if (emailField.value.trim() === '') {
             alert('Please enter a valid email address.');
@@ -19,7 +17,6 @@ document.addEventListener('DOMContentLoaded', function() {
             return false;
         }
         
-        // Validation for password and confirm password
         const passwordField = form.querySelector('input[type="password"]');
         const confirmPasswordField = form.querySelectorAll('input[type="password"]')[1];
         if (passwordField.value.trim() === '' || confirmPasswordField.value.trim() === '') {
@@ -33,7 +30,6 @@ document.addEventListener('DOMContentLoaded', function() {
             return false;
         }
 
-        // Validation for gender
         const genderField = form.querySelector('#gender');
         if (genderField.value === 'gender') {
             alert('Please select your gender.');
@@ -41,14 +37,12 @@ document.addEventListener('DOMContentLoaded', function() {
             return false;
         }
 
-        // Validation for terms and conditions
         const agreeTermsCheckbox = form.querySelector('#agreeTerms');
         if (!agreeTermsCheckbox.checked) {
             alert('Please agree to the terms and conditions.');
             return false;
         }
 
-        // If all validations pass, submit the form
         alert('Form submitted successfully!');
         form.submit();
         window.location.href = 'homepage.html';
