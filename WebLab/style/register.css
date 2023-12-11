@@ -67,3 +67,29 @@ a {
     color: #FF6F61;
     text-decoration: none;
 }
+
+
+@media screen and (max-width: 800px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    .slogan {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .register-button,
+    .news-button,
+    .watch-button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+}

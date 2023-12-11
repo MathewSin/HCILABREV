@@ -155,7 +155,7 @@ p {
     background-color: #0056b3;
 }
 
-/* Responsive styles */
+
 @media screen and (max-width: 800px) {
     h1 {
         font-size: 28px;

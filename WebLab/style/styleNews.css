@@ -84,3 +84,38 @@ footer {
 #last-news{
     margin-bottom: 75px;
 }
+
+@media screen and (max-width: 800px) {
+  h1 {
+      font-size: 28px;
+  }
+
+  .slogan {
+      font-size: 20px;
+  }
+
+  h2 {
+      font-size: 24px;
+  }
+
+  p {
+      font-size: 16px;
+  }
+
+  body {
+    font-size: 14px;
+}
+
+.news-article img {
+  width: 100%;
+  height: auto;
+}
+
+
+  .register-button,
+  .news-button,
+  .watch-button {
+      font-size: 16px;
+      padding: 8px 16px;
+  }
+}
